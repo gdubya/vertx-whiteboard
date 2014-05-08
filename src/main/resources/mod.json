@@ -1,4 +1,5 @@
 {
-  "main":"WhiteboardVerticle.groovy",
+  "main":"com.garethwestern.vertx.WhiteboardVerticle",
+//  "main":"WhiteboardVerticle.groovy",
   "auto-redeploy": true
 }

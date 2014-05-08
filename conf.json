@@ -1,3 +1,4 @@
 {
-  "foo": "bar"
+    "host": "localhost",
+    "port": 8181
 }
