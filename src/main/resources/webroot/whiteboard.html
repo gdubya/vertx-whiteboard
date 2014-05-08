@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Whiteboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://cdn.sockjs.org/sockjs-0.3.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <script src='js/vertxbus.js'></script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        <h3>Vert.x Whiteboard</h3>
+        <a onclick="app.clear()" class="ui-btn-left" data-role="button" data-icon="delete" data-theme="b">Clear</a>
+    </div>
+    <canvas id="whiteboard">Canvas</canvas>
+
+    <script src="js/whiteboard.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        init();
+    </script>
+
+</div>
+</body>
+</html>
