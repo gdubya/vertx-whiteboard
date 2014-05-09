@@ -188,6 +188,7 @@ def doInit() {
       "bin\r\n" +
       "out/production/${project.name}\r\n" +
       "out/test/${project.name}\r\n" +
+      "build/classes/main\r\n" +
       "build/deps\r\n";
     cpFile << defaultCp;
   }
