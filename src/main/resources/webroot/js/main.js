@@ -1,5 +1,12 @@
 function init(){
-    var eb = new vertx.EventBus('http://localhost:8181/bus');
+    var eb = new vertx.EventBus(
+        window.location.protocol +
+        '//' +
+        window.location.hostname +
+        ':' +
+        window.location.port +
+        '/bus'
+    );
     var uuid = Math.random().toString(36).slice(2).substring(0, 6);
 
     window.app = new WhiteboardApp(eb, uuid);

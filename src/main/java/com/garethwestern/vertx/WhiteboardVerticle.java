@@ -15,7 +15,12 @@ public class WhiteboardVerticle extends Verticle {
         final HttpServer httpServer = vertx.createHttpServer();
 
         httpServer.requestHandler(request -> {
-            String file = request.uri().equals("/") ? "index.html" : request.uri();
+            String file = "";
+            if (request.path().equals("/")) {
+                file = "index.html";
+            } else if (!request.path().contains("..")) {
+                file = request.path();
+            }
             request.response().sendFile("webroot/" + file);
         });
 
