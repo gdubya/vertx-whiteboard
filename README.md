@@ -13,6 +13,7 @@ How to run the demo
 
 Links
 -----------
+[Live Vert.X Demo](http://vertxwhiteboard-westerg.rhcloud.com/)
+
 [Live MQTT Demo](http://m2m.demos.ibm.com/whiteboard/)
 
-Live Vert.x Demo (coming soon)
